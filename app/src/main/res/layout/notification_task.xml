@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/notify_img"
+        android:layout_width="412dp"
+        android:layout_height="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/gradient_animation_notife_task" />
+
+    <Button
+        android:id="@+id/ready_button"
+        android:layout_width="328dp"
+        android:layout_height="36dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Я готов"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/notify_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notify_img"
+        app:layout_constraintVertical_bias="0.878" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Далее, Вам будет предложено первое задание. Вы готовы сделать ваши зубы еще более здоровыми?"
+        android:textColor="@color/black_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/ready_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notify_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

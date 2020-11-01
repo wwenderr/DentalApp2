@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.Holo.NoActionBar"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".Greetings">
+
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/app_information"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="Приветствуем вас в приложении Dental App"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/app_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/app_information"
+        android:layout_width="297dp"
+        android:layout_height="92dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="184dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="Мы поможем Вам поддерживать здоровье полости рта, чтобы ваши зубы были всегда крепкими, белыми и здоровыми. Для начала давайте познакомимся."
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetings" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="611dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/roboto_medium"
+        android:text="НАЧАТЬ"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:layout_above="@+id/greetings"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/greetings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

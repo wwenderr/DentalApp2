@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="578dp"
+        android:background="@drawable/gradient_animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gradient_animation" />
+
+    <TextView
+        android:id="@+id/lets_make_notifc"
+        android:layout_width="288dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="499dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Давайте настроим оповещения"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/description_notifc"
+        android:layout_width="312dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="408dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Мы будем напоминать Вам о чистке зубов утром и вечером. Выберите время, в которое хотите получать оповещения. Вы сможете отключить оповещения в любой момент в настройках. "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lets_make_notifc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/morning_notifc"
+        android:layout_width="198dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="306dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Утреннее напоминание"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_notifc"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/evening_notifc"
+        android:layout_width="198dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="207dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Вечернее напоминание"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morning_notifc"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/ready_notific_button"
+        android:layout_width="297dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#FFFFFF"
+        android:text="ГОТОВО"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <CheckBox
+        android:id="@+id/am_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="30dp"
+        android:checked="false"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="7:00"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/evening_notifc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morning_notifc"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <CheckBox
+        android:id="@+id/am_checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="8:00"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/evening_notifc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morning_notifc"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <CheckBox
+        android:id="@+id/pm_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="161dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="21:00"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evening_notifc"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/pm_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="161dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="22:00"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evening_notifc"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

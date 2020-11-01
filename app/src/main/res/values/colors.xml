@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    
+    
+    <color name="colorFirst">#FE0944</color>
+    <color name="colorSecond">#FE5D6E</color>
+    <color name="colorThird">#FEA692</color>
+    <color name="colorFourth">#FDC994</color>
+    <color name="colorFifth">#FFF1E5</color>
+    <color name="colorSixth">#FFDD90</color>
+    <color name="color7">#F6F3EE</color>
+    <color name="color8">#F2E0FF</color>
+    <color name="color9">#FFE6E6</color>
+    <color name="color10">#FFF6E6</color>
+
+    <color name="colorYourName1">#1ADAED</color>
+    <color name="colorYourName2">#6BE2DC</color>
+    <color name="colorYourName3">#9AE7D1</color>
+
+
+    <color name="colorNotifyTask1">#FFE5F7</color>
+    <color name="colorNotifyTask2">#FFF2FB</color>
+    <color name="colorNotifyTask3">#FFFDFE</color>
+
+    <color name="colorFirstTask1">#DDBDFC</color>
+    <color name="colorFirstTask2">#BAC2FC</color>
+    <color name="colorFirstTask3">#96C8FB</color>
+    
+    <color name="colorProfile">#D7A5FB</color>
+    <color name="colorProfile1">#ACA4F9</color>
+    <color name="colorProfile2">#66A3F6</color>
+
+
+    <color name="tasks">#e6fbf8</color>
+
+
+    <color name="name_tag">#707070</color>
+    <color name="black_text">#000000</color>
+
+
+</resources>
