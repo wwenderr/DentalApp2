@@ -3,6 +3,7 @@ package com.example.dentalapp3
 import android.content.Context
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
@@ -11,17 +12,14 @@ import kotlinx.android.synthetic.main.second_fragment.*
 
 class SecondFragment: Fragment(R.layout.second_fragment) {
 
-    @RequiresApi(Build.VERSION_CODES.M)
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         val exampleList = generateDummyList(12)
         list_id.adapter = ExampleAdapter(exampleList)
-        /*list_id.layoutManager = LinearLayoutManager(this)*/
+        list_id.layoutManager = LinearLayoutManager(context)
 
         list_id.setHasFixedSize(true)
     }
-
 
     private fun generateDummyList(size: Int): List<ExampleItem> {
         val list = ArrayList<ExampleItem>()
