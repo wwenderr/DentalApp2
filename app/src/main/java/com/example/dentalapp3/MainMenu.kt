@@ -7,9 +7,10 @@ import android.view.WindowManager
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.dentalapp3.articles.SecondFragment
 import kotlinx.android.synthetic.main.main_menu_activity.*
 
-class MainMenu: AppCompatActivity()  {
+class MainMenu : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,15 +27,15 @@ class MainMenu: AppCompatActivity()  {
 
         val firstFragment = FirstFragment()
         val secondFragment = SecondFragment()
-        val ThirdFragment = ThirdFragment()
+        val thirdFragment = ThirdFragment()
 
         setCurrentFragment(firstFragment)
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
-            when(it.itemId) {
+            when (it.itemId) {
                 R.id.home -> setCurrentFragment(firstFragment)
                 R.id.fire -> setCurrentFragment(secondFragment)
-                R.id.profile -> setCurrentFragment(ThirdFragment)
+                R.id.profile -> setCurrentFragment(thirdFragment)
 
             }
             true
@@ -43,8 +44,8 @@ class MainMenu: AppCompatActivity()  {
 
     private fun setCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flFragment,fragment)
+            replace(R.id.flFragment, fragment)
             commit()
         }
 
-    }
+}

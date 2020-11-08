@@ -1,27 +1,29 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.articles
 
-import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
-import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.dentalapp3.R
 import kotlinx.android.synthetic.main.second_fragment.*
+import java.lang.reflect.Array
+import java.util.*
+import kotlin.collections.ArrayList
 
 class SecondFragment: Fragment(R.layout.second_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val exampleList = generateDummyList(12)
-        list_id.adapter = ExampleAdapter(exampleList)
+        val exampleList = generateDummyList(7)
+        list_id.adapter = ExampleAdapter(exampleList, context as AppCompatActivity)
         list_id.layoutManager = LinearLayoutManager(context)
 
         list_id.setHasFixedSize(true)
     }
 
     private fun generateDummyList(size: Int): List<ExampleItem> {
+        val array = resources.getStringArray(R.array.titles)
         val list = ArrayList<ExampleItem>()
         for (i in 0 until size) {
             val drawable = when (i % 3) {
@@ -29,7 +31,7 @@ class SecondFragment: Fragment(R.layout.second_fragment) {
                 1 -> R.drawable.article2
                 else -> R.drawable.article
             }
-            val item = ExampleItem(drawable, "Item $i", "Line 2")
+            val item = ExampleItem(drawable, array[i], "Line 2")
             list += item
         }
         return list
