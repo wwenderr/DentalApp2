@@ -15,7 +15,7 @@ class SecondFragment: Fragment(R.layout.second_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val exampleList = generateDummyList(7)
+        val exampleList = generateDummyList(17)
         list_id.adapter = ExampleAdapter(exampleList, context as AppCompatActivity)
         list_id.layoutManager = LinearLayoutManager(context)
 
