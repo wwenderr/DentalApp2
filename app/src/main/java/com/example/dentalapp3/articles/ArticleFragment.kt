@@ -29,7 +29,17 @@ class ArticleFragment : Fragment(R.layout.article_fragment) {
                 3 -> R.drawable.img_teeth4
                 4 -> R.drawable.img_teeth5
                 5 -> R.drawable.img_teeth6
-                else -> R.drawable.img_teeth7
+                6 -> R.drawable.img_teeth7
+                7 -> R.drawable.img_teeth8
+                8 -> R.drawable.img_teeth9
+                9 -> R.drawable.img_teeth10
+                10 -> R.drawable.img_teeth11
+                11 -> R.drawable.img_teeth12
+                12 -> R.drawable.img_teeth13
+                13 -> R.drawable.img_teeth14
+                14 -> R.drawable.img_teeth15
+                15 -> R.drawable.img_teeth16
+                else -> R.drawable.img_teeth17
             }
         )
         title.text = titles[position]
