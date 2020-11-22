@@ -40,5 +40,13 @@
     <color name="name_tag">#707070</color>
     <color name="black_text">#000000</color>
 
+    <color name="colorQuiz1_1">#F49A81</color>
+    <color name="colorQuiz1_2">#F586B1</color>
+    <color name="colorQuiz1_3">#F36DF2</color>
+    <color name="colorQuiz2_1">#75DE19</color>
+    <color name="colorQuiz2_2">#BEC11C</color>
+    <color name="colorQuiz2_3">#E4B11C</color>
+    <color name="colorWhite">#FFFFFF</color>
+
 
 </resources>
