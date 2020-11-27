@@ -41,7 +41,7 @@ class notification_settings: AppCompatActivity() {
             val am_7 = am_checkBox.isChecked
             val am_8 = am_checkBox2.isChecked
 
-            this.intent = Intent(this, MainMenu::class.java)
+            this.intent = Intent(this, MainMenuActivity::class.java)
             startActivity(this.intent)
 
         }

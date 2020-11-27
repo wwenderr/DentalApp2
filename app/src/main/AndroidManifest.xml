@@ -7,29 +7,24 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true">
-
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".your_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".QuizActivity" />
         <activity
-            android:name=".Greetings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".YourNameActivity" />
         <activity
-            android:name=".first_task"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".Greetings" />
         <activity
-            android:name=".notification_settings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".first_task" />
         <activity
-            android:name=".MainMenu"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".Statistics"
-                  android:theme="@style/AppTheme.NoActionBar"/>
+            android:name=".notification_settings" />
         <activity
-            android:name=".SplashScreen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".MainMenuActivity" />
+        <activity
+            android:name=".Statistics" />
+        <activity
+            android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

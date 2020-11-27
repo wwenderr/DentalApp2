@@ -17,14 +17,17 @@ class Greetings : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         requestWindowFeature(Window.FEATURE_NO_TITLE)
-        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        this.window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         supportActionBar?.hide()
 
         setContentView(R.layout.activity_main)
 
         start_button.setOnClickListener {
 
-           this.intent = Intent(this,your_name::class.java)
+            this.intent = Intent(this, YourNameActivity::class.java)
             startActivity(this.intent)
         }
 

@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.dentalapp3.articles.SecondFragment
 import kotlinx.android.synthetic.main.main_menu_activity.*
 
-class MainMenu : AppCompatActivity() {
+class MainMenuActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
