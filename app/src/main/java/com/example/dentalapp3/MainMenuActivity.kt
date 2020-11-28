@@ -1,10 +1,12 @@
 package com.example.dentalapp3
 
+import android.content.DialogInterface
 import android.os.Build
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -63,7 +65,13 @@ class MainMenuActivity : AppCompatActivity() {
         if (backPressedListener != null) {
             backPressedListener.onBackPressed()
         } else {
-            super.onBackPressed()
+            openQuitDialog()
         }
+    }
+
+    private fun openQuitDialog() {
+        val quitDialogFragment = QuitDialogFragment()
+        val manager = supportFragmentManager
+        quitDialogFragment.show(manager, "dialog")
     }
 }
