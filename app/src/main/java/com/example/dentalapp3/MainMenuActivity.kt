@@ -7,8 +7,11 @@ import android.view.WindowManager
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import com.example.dentalapp3.articles.OnBackPressedListener
 import com.example.dentalapp3.articles.SecondFragment
 import kotlinx.android.synthetic.main.main_menu_activity.*
+
 
 class MainMenuActivity : AppCompatActivity() {
 
@@ -48,4 +51,19 @@ class MainMenuActivity : AppCompatActivity() {
             commit()
         }
 
+    override fun onBackPressed() {
+        val fm: FragmentManager = supportFragmentManager
+        var backPressedListener: OnBackPressedListener? = null
+        for (fragment in fm.fragments) {
+            if (fragment is OnBackPressedListener) {
+                backPressedListener = fragment
+                break
+            }
+        }
+        if (backPressedListener != null) {
+            backPressedListener.onBackPressed()
+        } else {
+            super.onBackPressed()
+        }
+    }
 }

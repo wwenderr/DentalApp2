@@ -3,10 +3,11 @@ package com.example.dentalapp3.articles
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.dentalapp3.MainMenuActivity
 import com.example.dentalapp3.R
 import kotlinx.android.synthetic.main.article_fragment.*
 
-class ArticleFragment : Fragment(R.layout.article_fragment) {
+class ArticleFragment : Fragment(R.layout.article_fragment), OnBackPressedListener {
 
     companion object {
         private const val POSITION = "item_position"
@@ -45,4 +46,15 @@ class ArticleFragment : Fragment(R.layout.article_fragment) {
         title.text = titles[position]
         article.text = articles[position]
     }
+
+    override fun onBackPressed() {
+        val fragment = SecondFragment()
+        val activity = this.activity as MainMenuActivity
+        activity.supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment, fragment)
+            commit()
+        }
+    }
+
+
 }

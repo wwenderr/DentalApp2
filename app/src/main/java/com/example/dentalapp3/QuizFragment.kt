@@ -18,7 +18,7 @@ class QuizFragment : Fragment(R.layout.quiz_fragment) {
         animDrawable.start()
 
         var count = 0
-        var ans = ArrayList<Int>()
+        val ans = ArrayList<Int>()
         replaceQuestion(count, view)
         count++
 
@@ -60,7 +60,7 @@ class QuizFragment : Fragment(R.layout.quiz_fragment) {
         if (count >= 7) startNewActivity()
         else {
             val questions = resources.getStringArray(R.array.questions_for_quiz)
-            var strings = resources.getStringArray(
+            val strings = resources.getStringArray(
                 when (count) {
                     0 -> R.array.answers_for_first_question
                     1 -> R.array.answers_for_second_question
