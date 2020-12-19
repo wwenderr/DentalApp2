@@ -9,28 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity
-            android:name=".QuizActivity" />
-        <activity
-            android:name=".YourNameActivity" />
-        <activity
-            android:name=".Greetings" />
-        <activity
-            android:name=".first_task" />
-        <activity
-            android:name=".notification_settings" />
-        <activity
-            android:name=".MainMenuActivity" />
-        <activity
-            android:name=".Statistics" />
-        <activity
-            android:name=".SplashScreen">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".quiz.QuizActivity" />
+        <activity android:name=".YourNameActivity" />
+        <activity android:name=".Greetings" />
+        <activity android:name=".FirstTask" />
+        <activity android:name=".ui.third.NotificationSettings" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".ui.third.Statistics" />
     </application>
 
 </manifest>

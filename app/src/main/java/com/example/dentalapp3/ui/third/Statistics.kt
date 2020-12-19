@@ -1,9 +1,10 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.ui.third
 
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.dentalapp3.R
 
 class Statistics : AppCompatActivity() {
 

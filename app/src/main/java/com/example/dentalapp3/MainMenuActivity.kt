@@ -1,17 +1,18 @@
 package com.example.dentalapp3
 
-import android.content.DialogInterface
 import android.os.Build
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.dentalapp3.articles.OnBackPressedListener
-import com.example.dentalapp3.articles.SecondFragment
+import com.example.dentalapp3.ui.QuitDialogFragment
+import com.example.dentalapp3.ui.OnBackPressedListener
+import com.example.dentalapp3.ui.second.SecondFragment
+import com.example.dentalapp3.ui.first.FirstFragment
+import com.example.dentalapp3.ui.third.ThirdFragment
 import kotlinx.android.synthetic.main.main_menu_activity.*
 
 

@@ -6,17 +6,19 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_your_name.*
+import com.example.dentalapp3.ui.third.NotificationSettings
 import kotlinx.android.synthetic.main.first_task.*
 
-class first_task: AppCompatActivity() {
+class FirstTask : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         requestWindowFeature(Window.FEATURE_NO_TITLE)
-        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        this.window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         supportActionBar?.hide()
 
 
@@ -24,7 +26,7 @@ class first_task: AppCompatActivity() {
 
 
         accept_button.setOnClickListener {
-            this.intent = Intent(this, notification_settings::class.java)
+            this.intent = Intent(this, NotificationSettings::class.java)
             startActivity(this.intent)
         }
 

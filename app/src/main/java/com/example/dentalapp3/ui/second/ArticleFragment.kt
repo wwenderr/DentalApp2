@@ -1,10 +1,11 @@
-package com.example.dentalapp3.articles
+package com.example.dentalapp3.ui.second
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.dentalapp3.MainMenuActivity
 import com.example.dentalapp3.R
+import com.example.dentalapp3.ui.OnBackPressedListener
 import kotlinx.android.synthetic.main.article_fragment.*
 
 class ArticleFragment : Fragment(R.layout.article_fragment), OnBackPressedListener {

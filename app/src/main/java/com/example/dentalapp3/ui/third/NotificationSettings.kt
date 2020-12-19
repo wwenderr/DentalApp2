@@ -1,4 +1,4 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.ui.third
 
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
@@ -6,10 +6,11 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.first_task.*
+import com.example.dentalapp3.MainMenuActivity
+import com.example.dentalapp3.R
 import kotlinx.android.synthetic.main.notification_settings.*
 
-class notification_settings: AppCompatActivity() {
+class NotificationSettings: AppCompatActivity() {
 
     var isCheckedDone = false
 

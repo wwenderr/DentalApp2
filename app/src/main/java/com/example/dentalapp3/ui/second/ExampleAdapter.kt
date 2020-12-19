@@ -1,4 +1,4 @@
-package com.example.dentalapp3.articles
+package com.example.dentalapp3.ui.second
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dentalapp3.R
 import kotlinx.android.synthetic.main.example_item.view.*
-import org.w3c.dom.Text
 
 class ExampleAdapter(private val exampleList: List<ExampleItem>, private val activity: AppCompatActivity) :
     RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder>() {

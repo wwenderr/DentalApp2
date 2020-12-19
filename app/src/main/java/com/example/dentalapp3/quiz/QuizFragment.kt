@@ -1,4 +1,4 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.quiz
 
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.constraintlayout.widget.Group
 import androidx.fragment.app.Fragment
+import com.example.dentalapp3.MainMenuActivity
+import com.example.dentalapp3.R
 import kotlinx.android.synthetic.main.quiz_fragment.*
 
 class QuizFragment : Fragment(R.layout.quiz_fragment) {

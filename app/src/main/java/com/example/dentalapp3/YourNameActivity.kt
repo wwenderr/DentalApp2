@@ -1,5 +1,6 @@
 package com.example.dentalapp3
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import android.os.Build
@@ -9,13 +10,15 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.example.dentalapp3.dataBase.DatabaseHandler
-import com.example.dentalapp3.dataBase.User
-import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.example.dentalapp3.quiz.QuizActivity
 import kotlinx.android.synthetic.main.activity_your_name.*
-import kotlinx.android.synthetic.main.notification_task.view.*
 
 class YourNameActivity : AppCompatActivity() {
+
+    companion object {
+        private const val KEY_SETTINGS = "mySettings"
+        private const val KEY_USER_NAME = "userName"
+    }
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +36,14 @@ class YourNameActivity : AppCompatActivity() {
 
         continue_button.setOnClickListener {
             if (personName.text.toString().isNotEmpty()) {
-                val quizActivity =  QuizActivity()
+                val sp = getSharedPreferences(
+                    KEY_SETTINGS,
+                    Context.MODE_PRIVATE
+                )
+                val e = sp.edit()
+                e.putString(KEY_USER_NAME, personName.text.toString())
+                e.apply()
+                val quizActivity = QuizActivity()
                 val intent = Intent(this, quizActivity::class.java)
                 startActivity(intent)
 //                val user =
@@ -48,7 +58,7 @@ class YourNameActivity : AppCompatActivity() {
 //                        dialog.show()
 //
 //                        view.ready_button.setOnClickListener {
-////                            this.intent = Intent(this, first_task::class.java)
+////                            this.intent = Intent(this, FirstTask::class.java)
 ////                            startActivity(this.intent)
 //
 //                        }

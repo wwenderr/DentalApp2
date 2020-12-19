@@ -1,4 +1,4 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.ui
 
 import android.app.AlertDialog
 import android.app.Dialog

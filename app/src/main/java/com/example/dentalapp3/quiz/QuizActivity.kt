@@ -1,7 +1,8 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.quiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.dentalapp3.R
 
 class QuizActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

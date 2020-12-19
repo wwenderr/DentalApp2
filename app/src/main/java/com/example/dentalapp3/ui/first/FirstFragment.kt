@@ -1,11 +1,10 @@
-package com.example.dentalapp3
+package com.example.dentalapp3.ui.first
 
-import android.animation.ObjectAnimator
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.first_fragment.*
+import com.example.dentalapp3.R
 
 class FirstFragment: Fragment(R.layout.first_fragment) {
 
