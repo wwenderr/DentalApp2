@@ -43,7 +43,7 @@ class ExampleAdapter(private val exampleList: List<ExampleItem>, private val act
             view.apply {
                 article_image.setImageResource(currentItem.imageResource)
                 main_text.text = currentItem.text1
-                sub_text.text = currentItem.text2
+//                sub_text.text = currentItem.text2
             }
         }
     }

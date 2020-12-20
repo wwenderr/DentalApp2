@@ -15,6 +15,7 @@ class SplashScreen : AppCompatActivity() {
 
     companion object {
         private const val KEY_SETTINGS = "mySettings"
+        private const val KEY_USER_NAME = "userName"
         private const val KEY_HAS_VISITED = "hasVisited"
     }
 
@@ -40,7 +41,7 @@ class SplashScreen : AppCompatActivity() {
         videoView2.setVideoPath(uri.toString())
         videoView2.setOnCompletionListener {
             val r = Runnable {
-                if (!hasVisited) {
+                if (!hasVisited || sp.getString(KEY_USER_NAME, "").isNullOrEmpty()) {
                     val e = sp.edit()
                     e.putBoolean(KEY_HAS_VISITED, true)
                     e.apply()

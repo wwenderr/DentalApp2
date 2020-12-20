@@ -28,17 +28,17 @@
             android:textSize="14sp"
             android:fontFamily="@font/montserrat_medium"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text = "Sub text"
-            android:id="@+id/sub_text"
-            android:padding="8dp"
-            android:layout_toEndOf="@+id/article_image"
-            android:layout_below="@+id/main_text"
-            android:textColor="@android:color/black"
-            android:textSize="14sp"
-            android:fontFamily="@font/montserrat_medium"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text = "Sub text"-->
+<!--            android:id="@+id/sub_text"-->
+<!--            android:padding="8dp"-->
+<!--            android:layout_toEndOf="@+id/article_image"-->
+<!--            android:layout_below="@+id/main_text"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="14sp"-->
+<!--            android:fontFamily="@font/montserrat_medium"/>-->
 
 
 

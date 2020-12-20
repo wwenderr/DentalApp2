@@ -13,18 +13,16 @@
         android:layout_width="118.77dp"
         android:layout_height="122.19dp"
         android:src="@drawable/gg17b6bc451e"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dental_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.75" />
 
     <TextView
         android:id="@+id/dental_app"
-        android:layout_width="254dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginEnd="92dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_medium"
         android:gravity="center"
         android:text="Dental App"
@@ -40,10 +38,6 @@
         android:id="@+id/videoView2"
         android:layout_width="119dp"
         android:layout_height="122dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="232dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="25dp"
         app:layout_constraintBottom_toTopOf="@+id/dental_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
