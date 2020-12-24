@@ -42,9 +42,6 @@ class SplashScreen : AppCompatActivity() {
         videoView2.setOnCompletionListener {
             val r = Runnable {
                 if (!hasVisited || sp.getString(KEY_USER_NAME, "").isNullOrEmpty()) {
-                    val e = sp.edit()
-                    e.putBoolean(KEY_HAS_VISITED, true)
-                    e.apply()
                     startActivity(Intent(this, Greetings::class.java))
                 } else
                     startActivity(Intent(this, MainMenuActivity::class.java))
