@@ -8,6 +8,12 @@
         android:iconTint="@color/colorFirst"/>
 
     <item
+        android:id="@+id/reward_icon"
+        android:title="Награды"
+        android:icon="@drawable/ic_medal"
+        android:iconTint="@color/colorFourth"/>
+
+    <item
         android:id="@+id/fire"
         android:title="Интересное"
         android:icon="@drawable/ic_fire"

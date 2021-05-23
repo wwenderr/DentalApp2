@@ -20,6 +20,7 @@
         <activity android:name=".YourNameActivity" />
         <activity android:name=".Greetings" />
         <activity android:name=".FirstTask" />
+        <activity android:name=".ui.first.RewardActivity"/>
         <activity android:name=".ui.third.NotificationSettings" />
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".ui.third.Statistics" />

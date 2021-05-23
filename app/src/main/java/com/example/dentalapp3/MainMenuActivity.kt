@@ -12,8 +12,11 @@ import com.example.dentalapp3.ui.QuitDialogFragment
 import com.example.dentalapp3.ui.OnBackPressedListener
 import com.example.dentalapp3.ui.second.SecondFragment
 import com.example.dentalapp3.ui.first.FirstFragment
+import com.example.dentalapp3.ui.first.RewardActivity
 import com.example.dentalapp3.ui.third.ThirdFragment
+import kotlinx.android.synthetic.main.first_fragment.*
 import kotlinx.android.synthetic.main.main_menu_activity.*
+import com.example.dentalapp3.ui.fourth.FourthFragment as FourthFragment
 
 
 class MainMenuActivity : AppCompatActivity() {
@@ -34,6 +37,8 @@ class MainMenuActivity : AppCompatActivity() {
         val firstFragment = FirstFragment()
         val secondFragment = SecondFragment()
         val thirdFragment = ThirdFragment()
+        val fourthFragment = FourthFragment()
+
 
         setCurrentFragment(firstFragment)
 
@@ -42,6 +47,7 @@ class MainMenuActivity : AppCompatActivity() {
                 R.id.home -> setCurrentFragment(firstFragment)
                 R.id.fire -> setCurrentFragment(secondFragment)
                 R.id.profile -> setCurrentFragment(thirdFragment)
+                R.id.reward_icon -> setCurrentFragment(fourthFragment)
 
             }
             true

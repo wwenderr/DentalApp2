@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.dentalapp3.R
 import kotlinx.android.synthetic.main.example_item.view.*
 
-class ExampleAdapter(private val exampleList: List<ExampleItem>, private val activity: AppCompatActivity) :
+class  ExampleAdapter(private val exampleList: List<ExampleItem>, private val activity: AppCompatActivity) :
     RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder>() {
 
     companion object{
