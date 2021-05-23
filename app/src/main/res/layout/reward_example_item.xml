@@ -27,14 +27,14 @@
 
         <TextView
             android:id="@+id/main_text_reward"
-            android:layout_width="203dp"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="82dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="14dp"
             android:fontFamily="@font/montserrat_medium"
             android:gravity="center"
             android:padding="8dp"

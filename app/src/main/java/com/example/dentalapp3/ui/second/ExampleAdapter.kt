@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dentalapp3.R
+import com.example.dentalapp3.ui.fourth.RewardArticleFragment
 import kotlinx.android.synthetic.main.example_item.view.*
 
 class  ExampleAdapter(private val exampleList: List<ExampleItem>, private val activity: AppCompatActivity) :
@@ -27,7 +28,7 @@ class  ExampleAdapter(private val exampleList: List<ExampleItem>, private val ac
         val currentItem = exampleList[position]
         holder.onBind(currentItem)
         holder.view.setOnClickListener {
-            val fragment = ArticleFragment()
+            val fragment = RewardArticleFragment()
             val bundle = Bundle()
             bundle.putInt(POSITION, position)
             fragment.arguments = bundle

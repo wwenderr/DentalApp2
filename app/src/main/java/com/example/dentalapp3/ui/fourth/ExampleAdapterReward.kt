@@ -30,7 +30,7 @@ class ExampleAdapterReward(private val exampleList: List<ExampleItemReward>, pri
         val currentItemReward = exampleList[position]
         holder.onBind(currentItemReward)
         holder.view.setOnClickListener {
-            val fragment_reward = ArticleFragment()
+            val fragment_reward = RewardArticleFragment()
             val bundle = Bundle()
             bundle.putInt(POSITION, position)
             fragment_reward.arguments = bundle
